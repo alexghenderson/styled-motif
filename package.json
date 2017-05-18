@@ -1,0 +1,19 @@
+{
+  "name": "styled-motif",
+  "version": "1.0.0",
+  "description": "Utility function for manipulating styled-component colors",
+  "main": "index.js",
+  "author": "Alex Henderson",
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src/index.js -o dist/index.js"
+  },
+  "dependencies": {
+    "color": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.4.0"
+  }
+}
