@@ -4,11 +4,15 @@ import Color from 'color';
 const recurse = (theme) => {
   const out = Object.keys(theme).reduce(
     (palette, key) => {
-      palette[key] = (
-        typeof theme[key] === 'object'
-        ? (palette[key] = recurse(theme[key]))
-        : (palette[key] = Color(theme[key]))
-      );
+      try {
+        palette[key] = (
+          typeof theme[key] === 'object'
+          ? (palette[key] = recurse(theme[key]))
+          : (palette[key] = Color(theme[key]))
+        );
+      } catch (e) {
+        palette[key] = theme[key];
+      }
       return palette;
     }
   , {});
