@@ -31,3 +31,7 @@ Or, if manipulating the colors is required, use a selector function. The selecto
     )};
 
 Please note, any theme values that aren't recognized by the color library will be passed as-is.
+
+## Credits
+
+Credit to [@qix](https://medium.com/@qix) for [Color](https://github.com/Qix-/color), his color conversion and manipulation library, as well as [@glenmaddern](https://twitter.com/glenmaddern) and [@mxstbr](https://twitter.com/mxstbr) and the rest of the styled-components team for their very excellent library.
