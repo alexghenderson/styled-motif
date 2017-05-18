@@ -1,6 +1,6 @@
 {
   "name": "styled-motif",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility function for manipulating styled-component colors",
   "main": "dist/index.js",
   "author": "Alex Henderson",
